@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main > .top {
+    text-align: center;
+    padding: 2rem 3rem;
+    min-height: fit-content;
+}
+
+main > .bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+main > .bottom > .left {
+    flex: 1 1 auto;
+    padding: 2rem 3rem;
+}
+
+main > .bottom > .right {
+    flex: 2 1 auto;
+    padding: 2rem 3rem;
+    text-align: center;
+}
+
+main > .bottom > .right > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .bottom > .right > .container > .calc {
+    width: 100%;
+}
+
+main > .bottom > .right > .container > .calc > .calcAutomovel {
+    margin: 1rem 0;
+}
+
+main > .bottom > .right > .container > .calc > .calcAutomovel > .automovel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+main > .bottom > .right > .container > .calc > .calcAutomovel > .automovel > .divInputConsumo {
+    min-width: 50%;
+    width: fit-content
+} 
+
+main > .bottom > .right > .container > .calc > .calcAutomovel > .automovel > .select {
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+}
+
+main > .bottom > .right > .container > .calc > .calcAutomovel > .automovel > .select > select {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
